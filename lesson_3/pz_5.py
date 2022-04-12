@@ -10,7 +10,7 @@ numb_list = []
 
 while True:
     numbers = (input('Введите числа через пробел или введите Q для выхода из цикла: '))
-    #sum_numb = None
+
     if numbers.upper() != 'Q':
         try:
             for i in numbers.split(' '):
