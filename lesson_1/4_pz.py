@@ -12,6 +12,7 @@ if number > 0 and number % 1 == 0:
         number //= 10
         if a > max_number:
             max_number = a
+
     print('Самая большая цифра в числе: ', max_number)
 
 else:

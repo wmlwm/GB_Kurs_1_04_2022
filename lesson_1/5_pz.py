@@ -16,6 +16,7 @@ if profit > costs:
     print(f'На одного сотрудника приходится прибыль в размере ${profit_employess:.2f}')
 
 elif profit < costs:
+
     print(f'Убыток составляет {result:.2f}$')
 
 else:
