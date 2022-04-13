@@ -11,6 +11,7 @@ print('-' * 15)
 # for el in fact(n). Она отвечает за получение факториала числа.
 # В цикле нужно выводить только первые n чисел, начиная с 1! и до n!
 
+
 def fact(n):
     def my_func(el1, el2):
         return el1 * el2
@@ -21,21 +22,19 @@ def fact(n):
 
 fact(5)
 
-
 # если честно я не понял зачем изобретать велосипед если функция
 # реализованная в 5 задаче отлично подходит для подсчета факториала,
 # и можно просто вложить одну функцию в другую,
 # но раз надо сделать через yield то пусть будет через yield
-
-def fact2(n):
-    def my_func(el1, el2):
-        return el1 * el2
-
-    my_list = list(range(1, n + 1))
-    yield reduce(my_func, my_list)
+print('-' * 15)
 
 
-for el in fact2(5):
+def fact(n):
+    f = 1
+    for i in range(2, n + 1):
+        f *= i
+        yield f
+
+
+for el in fact(5):
     print(el)
-
-
