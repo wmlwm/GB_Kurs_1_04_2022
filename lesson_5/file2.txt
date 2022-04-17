@@ -1,0 +1,2 @@
+I am learning python
+I need to count the number of words in a string
