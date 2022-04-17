@@ -1,4 +1,4 @@
-def el_num(line, type=int, num_r = ''):
+def el_num(line, type=int, num_r=''):
     num_list = []
     num = num_r
     # for line in f_file:
